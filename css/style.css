@@ -200,3 +200,55 @@ a {
     margin-top: 19px;
     color: var(--color-grey);
 }
+
+.marketing {
+    background-color: var(--color-light-gray);
+    padding: 105px 0;
+}
+
+.marketing-container {
+    padding: 0 100px;
+}
+
+.marketing-element {
+    background-color: var(--color-white);
+    border: 1px solid #E8E9ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 37px;
+    border-radius: 5px;
+}
+
+.marketing-text {
+    max-width: 415px;
+    margin: 91px 35px;
+}
+
+.marketing-header {
+    font-family: var(--font-raleway);
+    font-size: 36px;
+}
+
+.marketing-text::after {
+    content: "";
+    width: 332px;
+    height: 4px;
+    background-color: var(--line-color);
+    display: block;
+    margin-top: 50px;
+}
+
+.marketing-description {
+    margin-top: 30px;
+    line-height: 1.375rem;
+}
+
+.marketing-laptop .marketing-image img {
+    max-width: 386px;
+}
+
+.marketing-phone {
+    display: flex;
+    flex-direction: row-reverse;
+}
