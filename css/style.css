@@ -244,11 +244,84 @@ a {
     line-height: 1.375rem;
 }
 
+.marketing-laptop {
+    --line-color: var(--color-redish)
+}
+
+.marketing-image {
+    position: relative;
+}
+
+.marketing-image img {
+    position: relative;
+}
+
 .marketing-laptop .marketing-image img {
     max-width: 386px;
+    margin-right: 117px;
+    margin-bottom: 38px;
+}
+
+.marketing-laptop .marketing-image::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: var(--line-color);
+    display: block;
+    border-radius: 41px;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 220px;
+    bottom: 120px;
 }
 
 .marketing-phone {
     display: flex;
     flex-direction: row-reverse;
+    --line-color: var(--color-primary);
+}
+
+.marketing-phone .marketing-image::before {
+    content: "";
+    width: 320px;
+    height: 320px;
+    background-color: var(--line-color);
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 70px;
+    bottom: 38px;
+}
+
+.marketing-double-element {
+    display: flex;
+    justify-content: space-between;
+}
+
+.marketing-phone .marketing-image img {
+    max-width: 426px;
+    margin-left: 70px;
+    margin-bottom: 13px;
+}
+
+.marketing-split {
+    flex-grow: 1;
+    --line-color: var(--color-green);
+    max-width: 623px;
+}
+
+.marketing-double-element .marketing-image img {
+    max-width: 296px;
+}
+
+.marketing-double-element .marketing-image {
+    background-color: var(--color-green);
+    width: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.marketing-double-element > div {
+    margin-bottom: 0;
 }
