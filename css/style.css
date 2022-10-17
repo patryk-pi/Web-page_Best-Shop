@@ -42,6 +42,7 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+
 }
 
 .logo {
@@ -324,4 +325,87 @@ a {
 
 .marketing-double-element > div {
     margin-bottom: 0;
+}
+
+.pricing {
+    margin: 100px auto;
+}
+
+.pricing-header {
+    text-align: center;
+}
+
+.pricing-container {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.pricing-item {
+    width: 372px;
+    border-radius: 18px;
+    border: 1px solid var(--line-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.basic {
+    --line-color: var(--color-redish);
+}
+
+.professional {
+    --line-color: var(--color-primary);
+    width: 400px;
+    box-shadow: 5px 10px 27px #07ACE629;
+    margin: 0 40px;
+}
+
+.premium {
+    --line-color: var(--color-green);
+}
+
+.pricing-benefit {
+    display: flex;
+    gap: 10px;
+}
+
+.limited-offer-heading {
+    color: #13253B;
+    font-size: 0.75rem;
+    margin-top: 15px;
+    font-family: var(--font-raleway);
+    font-weight: 700;
+}
+
+.pricing-item-header {
+    font-family: var(--font-raleway);
+    font-size: 1.3125rem;
+    font-weight: 700;
+    margin-top: 34px;
+    color: #13253B;
+}
+
+.price {
+    margin-top: 14px;
+    color: var(--line-color);
+    font-family: var(--font-open-sans);
+    font-size: 46px;
+    font-weight: 300;
+}
+
+.pricing-benefits-container {
+    margin: 69px 0 80px;
+    font-family: var(--font-open-sans);
+    font-size: 0.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pricing-item .btn {
+    background-color: var(--line-color);
+    position: relative;
 }
