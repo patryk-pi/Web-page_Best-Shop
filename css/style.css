@@ -339,6 +339,7 @@ a {
     display: flex;
     margin-top: 50px;
     justify-content: center;
+    align-items: center;
 }
 
 .pricing-item {
@@ -347,13 +348,13 @@ a {
     border: 1px solid var(--line-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
+    position: relative;
 }
 
 .basic {
     --line-color: var(--color-redish);
+    flex-shrink: 4;
 }
 
 .professional {
@@ -370,6 +371,11 @@ a {
 .pricing-benefit {
     display: flex;
     gap: 10px;
+    margin-bottom: 20px;
+}
+
+.professional .pricing-benefit {
+    margin-bottom: 26px;
 }
 
 .limited-offer-heading {
@@ -397,7 +403,7 @@ a {
 }
 
 .pricing-benefits-container {
-    margin: 69px 0 80px;
+    margin: 69px 0 60px;
     font-family: var(--font-open-sans);
     font-size: 0.875rem;
     display: flex;
@@ -408,4 +414,13 @@ a {
 .pricing-item .btn {
     background-color: var(--line-color);
     position: relative;
+    top: 25px;
+}
+
+.premium .pricing-benefits-container {
+    margin-top: 57px;
+}
+
+.basic {
+    flex-shrink: 0;
 }
