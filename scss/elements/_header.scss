@@ -1,5 +1,4 @@
 
-
 .header {
   height: 7rem;
   box-shadow: 0 3px 6px #00000029;
@@ -14,14 +13,60 @@
   }
 
   .menu {
+
     &-btn {
-    display: none;
-    position: absolute;
-    top: -10000px;
-    right: -10000px;
-    opacity: 0;
+      display: none;
+      position: absolute;
+      top: -10000px;
+      right: -10000px;
+      opacity: 0;
+
+      @include mobile {
+        &:checked {
+          ~ .nav {
+            display: flex;
+          }
+
+          ~ .menu-toggle {
+            span {
+              &:nth-child(1) {
+                transform: rotate(45deg) translate(2px, 5px);
+              }
+              &:nth-child(2) {
+                opacity: 0;
+              }
+              &:nth-child(3) {
+                transform: rotate(-45deg) translate(2px, -5px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &-toggle {
+      display: none;
+
+      span {
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-bottom: 0.3rem;
+        background-color: $color-primary;
+        transition: .3s all ease-in-out;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+      }
+
+      @include mobile {
+        display: block;
+      }
+
+    }
   }
-}
 
   .nav {
     display: flex;
@@ -49,6 +94,26 @@
     &-link:active {
       color: $color-black;
       border-color: $color-primary;
+    }
+
+    @include mobile {
+      position: absolute;
+      left: 0;
+      top: 7rem;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      padding-bottom: 2rem;
+      display: none;
+
+      .nav-element {
+        padding: 0;
+      }
+
+      .nav-link {
+        display: block;
+        padding: 1.4rem 2rem;
+      }
     }
   }
 }
