@@ -1,0 +1,21 @@
+.btn {
+  display: inline-block;
+  border-radius: $button-radius;
+  color: white;
+  font-weight: 700;
+  font-family: $font-open-sans;
+  border: none;
+  padding: 1.6rem 6.5rem;
+  font-size: 1.6rem !important;
+
+
+  &-primary {
+    background-color: $color-primary;
+    font-size: 1rem;
+    box-shadow: .3rem 1rem 1.4rem $color-primary-shadow
+  }
+
+  &-large {
+    padding: 2.2rem 15.7rem;
+  }
+}

@@ -32,9 +32,11 @@
               &:nth-child(1) {
                 transform: rotate(45deg) translate(2px, 5px);
               }
+
               &:nth-child(2) {
                 opacity: 0;
               }
+
               &:nth-child(3) {
                 transform: rotate(-45deg) translate(2px, -5px);
               }
@@ -53,18 +55,16 @@
         display: block;
         margin-bottom: 0.3rem;
         background-color: $color-primary;
-        transition: .3s all ease-in-out;
+        transition: .4s all ease-in;
 
         &:last-child {
           margin-bottom: 0;
         }
-
       }
 
       @include mobile {
         display: block;
       }
-
     }
   }
 

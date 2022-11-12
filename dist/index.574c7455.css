@@ -226,6 +226,27 @@ a {
   font-weight: 300;
 }
 
+.btn {
+  color: #fff;
+  border: none;
+  border-radius: 35px;
+  padding: 1.6rem 6.5rem;
+  font-family: Open Sans, sans-serif;
+  font-weight: 700;
+  display: inline-block;
+  font-size: 1.6rem !important;
+}
+
+.btn-primary {
+  background-color: #08a6e4;
+  font-size: 1rem;
+  box-shadow: .3rem 1rem 1.4rem #07ace629;
+}
+
+.btn-large {
+  padding: 2.2rem 15.7rem;
+}
+
 .header {
   height: 7rem;
   width: 100vw;
@@ -275,7 +296,7 @@ a {
   height: 2px;
   background-color: #08a6e4;
   margin-bottom: .3rem;
-  transition: all .3s ease-in-out;
+  transition: all .4s ease-in;
   display: block;
 }
 
@@ -334,6 +355,58 @@ a {
 
   .header .nav .nav-link {
     padding: 1.4rem 2rem;
+    display: block;
+  }
+}
+
+.opening {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.opening-content {
+  text-align: center;
+  margin-top: 13rem;
+}
+
+@media (max-width: 790px) {
+  .opening-content {
+    margin-top: 10rem;
+  }
+}
+
+.opening-header {
+  font-family: Raleway, sans-serif;
+  font-size: 4.9rem;
+}
+
+.opening-text {
+  margin-top: 2rem;
+  margin-bottom: 3.8rem;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 790px) {
+  .opening-text {
+    padding: 0 7.5rem;
+  }
+}
+
+.opening .background-image {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 790px) {
+  .opening .background-image {
+    width: 210%;
+  }
+
+  .opening .btn-large {
+    margin: 0 1.5rem;
+    padding: 1.6rem 0;
     display: block;
   }
 }
