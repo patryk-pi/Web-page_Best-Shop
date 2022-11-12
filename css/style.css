@@ -42,7 +42,6 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 100%;
-
 }
 
 .logo {
@@ -52,7 +51,7 @@ a {
     font-weight: 300;
 }
 
-.navigation {
+.nav {
     display: flex;
 }
 

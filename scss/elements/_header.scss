@@ -1,0 +1,54 @@
+
+
+.header {
+  height: 7rem;
+  box-shadow: 0 3px 6px #00000029;
+  width: 100vw;
+  position: relative;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .menu {
+    &-btn {
+    display: none;
+    position: absolute;
+    top: -10000px;
+    right: -10000px;
+    opacity: 0;
+  }
+}
+
+  .nav {
+    display: flex;
+
+    &-element {
+      padding: 0 2.6rem;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &-link:link,
+    &-link:visited {
+      color: $color-grey;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      padding: 2.8rem 1.8rem 2.4rem;
+      border-bottom: 0.4rem solid transparent;
+      letter-spacing: 0.33rem;
+    }
+
+    &-link:hover,
+    &-link:active {
+      color: $color-black;
+      border-color: $color-primary;
+    }
+  }
+}

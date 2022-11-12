@@ -20,13 +20,13 @@ a {
 
   @include notebook {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 1.5rem;
   }
 }
 
 .logo {
   color: $color-primary;
   font: var(--font-raleway);
-  font-size: 2rem;
+  font-size: 3.7rem;
   font-weight: 300;
 }
