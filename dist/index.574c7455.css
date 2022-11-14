@@ -201,6 +201,7 @@ html {
 
 body {
   font-family: Open Sans, sans-serif;
+  font-size: 1.6rem;
 }
 
 a {
@@ -729,6 +730,155 @@ a {
   .marketing-text {
     max-width: 100%;
     margin: 3rem 1rem;
+  }
+}
+
+.pricing {
+  margin: 10rem auto;
+}
+
+.pricing-header {
+  text-align: center;
+}
+
+.pricing-container {
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .pricing-container {
+    flex-direction: column;
+    gap: 5.4rem;
+  }
+}
+
+.pricing-item {
+  width: 37.2rem;
+  border: 1px solid var(--line-color);
+  border-radius: 1.8rem;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .pricing-item {
+    flex-direction: row;
+    padding: 0 1rem;
+  }
+}
+
+.pricing-item .price {
+  color: var(--line-color);
+  font-family: var(--font-open-sans);
+  margin-top: 1.4rem;
+  font-size: 4.6rem;
+  font-weight: 300;
+}
+
+.pricing-item .btn {
+  background-color: var(--line-color);
+  position: relative;
+  top: 2.5rem;
+}
+
+@media (max-width: 1024px) {
+  .pricing-item .btn {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.pricing-item .limited-offer-heading {
+  color: #13253b;
+  margin-top: 1.5rem;
+  font-family: Raleway, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.pricing-details {
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .pricing-details {
+    width: 50%;
+  }
+}
+
+.pricing-benefits-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 6.9rem 0 2rem;
+  font-family: Open Sans, sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .pricing-benefits-container {
+    width: 50%;
+    align-items: flex-start;
+    gap: .5rem;
+    margin: 3rem 0;
+  }
+}
+
+.pricing-benefit {
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+}
+
+.pricing-item-header {
+  color: #13253b;
+  margin-top: 3.4rem;
+  font-family: Raleway, sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+@media (max-width: 1024px) {
+  .pricing-item-header {
+    margin-top: 0;
+  }
+}
+
+.pricing .basic {
+  --line-color: #fb3b64;
+}
+
+.pricing .professional {
+  --line-color: #08a6e4;
+  width: 41rem;
+  margin: 0 4rem;
+  box-shadow: .5rem 1rem 2.7rem #07ace629;
+}
+
+.pricing .professional .pricing-benefit {
+  margin-bottom: 2.6rem;
+}
+
+.pricing .premium {
+  --line-color: #55dfb4;
+}
+
+.pricing .premium .pricing-benefits-container {
+  margin-top: 5.7rem;
+}
+
+@media (max-width: 1024px) {
+  .pricing .premium .pricing-benefits-container {
+    margin-top: 3rem;
   }
 }
 

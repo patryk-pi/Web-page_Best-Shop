@@ -1,0 +1,138 @@
+
+.pricing {
+  margin: 10rem auto;
+
+  &-header {
+    text-align: center;
+  }
+
+  &-container {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 5.4rem;
+    }
+  }
+
+  &-item {
+    width: 37.2rem;
+    border-radius: 1.8rem;
+    border: 1px solid var(--line-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    @include tablet {
+      flex-direction: row;
+      padding: 0 1rem 0;
+    }
+
+
+    .price {
+      margin-top: 1.4rem;
+      color: var(--line-color);
+      font-family: var(--font-open-sans);
+      font-size: 4.6rem;
+      font-weight: 300;
+    }
+
+
+
+    .btn {
+      background-color: var(--line-color);
+      position: relative;
+      top: 2.5rem;
+
+      @include tablet {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .limited-offer-heading {
+      color: #13253B;
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      font-family: $font-raleway;
+      font-weight: 700;
+    }
+  }
+
+  &-details {
+    text-align: center;
+
+    @include tablet {
+      width: 50%;
+    }
+  }
+
+  &-benefits-container {
+    margin: 6.9rem 0 2rem;
+    font-family: $font-open-sans;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+
+    @include tablet {
+      width: 50%;
+      margin: 3rem 0 3rem;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  }
+
+  &-benefit {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    align-items: center;
+  }
+
+  &-item-header {
+    font-family: $font-raleway;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-top: 3.4rem;
+    color: #13253B;
+
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+
+  .basic {
+    --line-color: #{$color-redish};
+  }
+
+  .professional {
+    --line-color: #{$color-primary};
+    width: 41rem;
+    box-shadow: .5rem 1rem 2.7rem #07ACE629;
+    margin: 0 4rem;
+
+    .pricing-benefit {
+      margin-bottom: 2.6rem;
+    }
+  }
+
+  .premium {
+    --line-color: #{$color-green};
+
+    .pricing-benefits-container {
+      margin-top: 5.7rem;
+
+      @include tablet {
+        margin-top: 3rem;
+      }
+    }
+  }
+}
