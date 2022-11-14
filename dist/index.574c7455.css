@@ -1032,4 +1032,34 @@ a {
   font-size: .8125rem;
 }
 
+.footer {
+  background-color: var(--color-light-gray);
+  box-shadow: 0 -5px 40px #00000029;
+}
+
+.footer-container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  display: flex;
+}
+
+.footer-header {
+  color: #08a6e4;
+  margin-bottom: 1rem;
+  font-family: Raleway, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+
+.footer-note {
+  color: #a5a5a5;
+  font-size: 1.1rem;
+}
+
+.footer-icons {
+  gap: 2rem;
+  display: flex;
+}
+
 /*# sourceMappingURL=index.574c7455.css.map */
