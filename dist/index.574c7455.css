@@ -882,4 +882,71 @@ a {
   }
 }
 
+.contact {
+  justify-content: center;
+  padding: 8rem 20rem 10rem;
+  font-family: Open Sans, sans-serif;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1.5rem 5rem;
+  }
+}
+
+.contact-column {
+  width: 50%;
+}
+
+@media (max-width: 1024px) {
+  .contact-column {
+    width: 100%;
+  }
+}
+
+.contact-column-field {
+  flex-direction: column;
+  display: flex;
+}
+
+.contact-header {
+  font-family: Raleway, sans-serif;
+  font-size: 4.9rem;
+  line-height: 5.9rem;
+}
+
+.contact-text {
+  margin-top: 2.2rem;
+  margin-bottom: 4.2rem;
+}
+
+@media (max-width: 1024px) {
+  .contact-text {
+    margin-top: .5rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.contact-details-container {
+  color: #a5a5a5;
+  gap: 2rem;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .contact-details-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.contact-detail {
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+}
+
 /*# sourceMappingURL=index.574c7455.css.map */
