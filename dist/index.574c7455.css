@@ -502,4 +502,234 @@ a {
   font-size: 1.6rem;
 }
 
+.marketing {
+  background-color: #f7f7f7;
+  padding: 10.5rem 0;
+}
+
+@media (max-width: 1024px) {
+  .marketing {
+    padding: 5rem 0;
+  }
+}
+
+.marketing-container {
+  padding: 0 10rem;
+}
+
+@media (max-width: 1024px) {
+  .marketing-container {
+    padding: 0 3rem;
+  }
+}
+
+.marketing-element {
+  background-color: #fff;
+  border: 1px solid #e8e9ed;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 3.7rem;
+  display: flex;
+}
+
+.marketing-element--laptop {
+  --line-color: #fb3b64;
+}
+
+@media (max-width: 1024px) {
+  .marketing-element--laptop {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.marketing-element--laptop .marketing-image {
+  position: relative;
+}
+
+.marketing-element--laptop .marketing-image img {
+  max-width: 386px;
+  z-index: 100;
+  margin-bottom: 38px;
+  margin-right: 117px;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .marketing-element--laptop .marketing-image img {
+    width: 19.2rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+.marketing-element--laptop .marketing-image:before {
+  content: "";
+  width: 180px;
+  height: 180px;
+  background-color: var(--line-color);
+  border-radius: 41px;
+  display: block;
+  position: absolute;
+  bottom: 120px;
+  left: 220px;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 1024px) {
+  .marketing-element--laptop .marketing-image:before {
+    width: 9rem;
+    height: 9rem;
+    bottom: 4.5rem;
+    left: 11rem;
+  }
+}
+
+.marketing-element--phone {
+  --line-color: #08a6e4;
+  flex-direction: row-reverse;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .marketing-element--phone {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.marketing-element--phone .marketing-image {
+  position: relative;
+}
+
+.marketing-element--phone .marketing-image img {
+  max-width: 426px;
+  margin-bottom: 13px;
+  margin-left: 70px;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .marketing-element--phone .marketing-image img {
+    width: 17.5rem;
+    margin-top: 30px;
+  }
+}
+
+.marketing-element--phone .marketing-image:before {
+  content: "";
+  width: 320px;
+  height: 320px;
+  background-color: var(--line-color);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  bottom: 38px;
+  left: 70px;
+}
+
+@media (max-width: 1024px) {
+  .marketing-element--phone .marketing-image:before {
+    width: 13.1rem;
+    height: 13.1rem;
+    bottom: 2rem;
+  }
+
+  .marketing-element {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.marketing-header {
+  font-family: Raleway, sans-serif;
+  font-size: 3.6rem;
+}
+
+.marketing-description {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.marketing-double-element {
+  justify-content: space-between;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.marketing-double-element .marketing-element {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .marketing-double-element {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.marketing-double-element .marketing-image {
+  max-width: 440px;
+  width: 100%;
+  background-color: #55dfb4;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6rem;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .marketing-double-element .marketing-image {
+    max-width: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.marketing-double-element .marketing-image img {
+  width: 29.6rem;
+  margin-top: 5.5rem;
+}
+
+.marketing-split {
+  --line-color: #55dfb4;
+  flex-grow: 1;
+}
+
+@media (max-width: 1024px) {
+  .marketing-split {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.marketing-text {
+  max-width: 41.5rem;
+  margin: 9.1rem 3.5rem;
+}
+
+.marketing-text:after {
+  content: "";
+  width: 332px;
+  height: 4px;
+  background-color: var(--line-color);
+  margin-top: 50px;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .marketing-text:after {
+    display: none;
+  }
+
+  .marketing-text {
+    max-width: 100%;
+    margin: 3rem 1rem;
+  }
+}
+
 /*# sourceMappingURL=index.574c7455.css.map */

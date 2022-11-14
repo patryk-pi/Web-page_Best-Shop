@@ -281,7 +281,7 @@ a {
     --line-color: var(--color-primary);
 }
 
-.marketing-phone .marketing-image::before {
+.marketing--phone .marketing-image::before {
     content: "";
     width: 320px;
     height: 320px;

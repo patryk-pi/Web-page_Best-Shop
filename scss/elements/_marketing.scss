@@ -1,0 +1,217 @@
+.marketing {
+  background-color: $color-light-gray;
+  padding: 10.5rem 0;
+
+  @include tablet {
+    padding: 5rem 0;
+  }
+
+
+  &-container {
+    padding: 0 10rem;
+
+    @include tablet {
+      padding: 0 3rem;
+    }
+  }
+
+  &-element {
+    background-color: $color-white;
+    border: 1px solid #E8E9ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 3.7rem;
+    border-radius: 5px;
+
+
+
+    &--laptop {
+      --line-color: #{$color-redish};
+
+      @include tablet {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .marketing-image {
+        position: relative;
+
+        img {
+          max-width: 386px;
+          margin-right: 117px;
+          margin-bottom: 38px;
+          z-index: 100;
+          position: relative;
+
+          @include tablet {
+            width: 19.2rem;
+            margin-top: 4rem;
+            margin-bottom: 0;
+            margin-right: 0;
+          }
+        }
+
+
+        &::before {
+          content: "";
+          width: 180px;
+          height: 180px;
+          background-color: var(--line-color);
+          display: block;
+          border-radius: 41px;
+          position: absolute;
+          transform: rotate(45deg);
+          left: 220px;
+          bottom: 120px;
+
+          @include tablet {
+            width: 9rem;
+            height: 9rem;
+            left: 11rem;
+            bottom: 4.5rem;
+          }
+        }
+      }
+    }
+
+    &--phone {
+      display: flex;
+      flex-direction: row-reverse;
+      --line-color: #{$color-primary};
+      @include tablet {
+        flex-direction: column;
+        align-items: center;
+      }
+
+
+      .marketing-image {
+        position: relative;
+
+        img {
+          max-width: 426px;
+          margin-left: 70px;
+          margin-bottom: 13px;
+          position: relative;
+
+          @include tablet {
+            width: 17.5rem;
+            margin-top: 30px;
+          }
+        }
+
+        &::before {
+          content: "";
+          width: 320px;
+          height: 320px;
+          background-color: var(--line-color);
+          display: block;
+          border-radius: 50%;
+          position: absolute;
+          left: 70px;
+          bottom: 38px;
+
+          @include tablet {
+            width: 13.1rem;
+            height: 13.1rem;
+            bottom: 2rem;
+          }
+        }
+      }
+    }
+
+    @include tablet {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+
+
+
+
+  &-header {
+    font-family: $font-raleway;
+    font-size: 3.6rem
+  }
+
+  &-description {
+    margin-top: 3rem;
+    line-height: 1.4;
+    font-size: 1.6rem;
+  }
+
+  &-double-element {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+
+    .marketing-element {
+      margin-bottom: 0;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .marketing-image {
+      background-color: $color-green;
+      max-width: 440px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 6rem;
+
+      @include tablet {
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+      }
+
+      img {
+        width: 29.6rem;
+        margin-top: 5.5rem;
+      }
+
+    }
+  }
+
+  &-split {
+    flex-grow: 1;
+    --line-color: #{$color-green};
+
+    @include tablet {
+      max-width: 100%;
+      width: 100%;
+    }
+
+  }
+
+  &-text {
+    max-width: 41.5rem;
+    margin: 9.1rem 3.5rem;
+
+    &::after {
+      content: "";
+      width: 332px;
+      height: 4px;
+      background-color: var(--line-color);
+      display: block;
+      margin-top: 50px;
+
+      @include tablet {
+        display: none;
+      }
+    }
+    @include tablet {
+      margin: 3rem 1rem;
+      max-width: 100%;
+    }
+  }
+
+
+}
+
+
