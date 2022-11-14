@@ -1,0 +1,85 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &-field {
+    display: flex;
+    flex-direction: column;
+
+    &:first-of-type {
+      margin-bottom: 4.2rem;
+    }
+  }
+
+  &-consent {
+    margin-top: 3rem;
+
+    .consent-text {
+      font-size: 1.2rem;
+      color: #707070;
+      line-height: 1.7rem;
+    }
+  }
+
+  &-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 3.4rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    font-size: 2.2rem;
+
+    input:checked ~ .checkbox {
+      background-image: url(../assets/Checkmark.svg);
+      background-position: center;
+      background-size: 50%;
+      background-repeat: no-repeat;
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: $color-white;
+      border: 1px solid $color-grey;
+      border-radius: 4px;
+    }
+  }
+
+  &-label {
+    font-size: 1.5rem;
+    color: $color-primary;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.32rem;
+
+    @include tablet {
+      font-size: 1.1rem;
+    }
+  }
+
+  &-input {
+    border: none;
+    border-bottom: 1px solid $color-grey;
+    background-color: transparent;
+    line-height: 4.2rem;
+  }
+
+  .btn {
+    font-size: 0.8125rem;
+    padding: 20px 97px;
+    align-self: flex-end;
+    margin-top: 20px;
+  }
+}
+

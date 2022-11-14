@@ -455,10 +455,10 @@ a {
     align-items: center;
 }
 
-/*.form-field {
+.form-field {
     display: flex;
     flex-direction: column;
-}*/
+}
 
 .form-field:first-of-type {
     margin-bottom: 42px;
@@ -525,10 +525,10 @@ a {
     line-height: 2.625rem;
 }
 
-/*.form {
+.form {
     display: flex;
     flex-direction: column;
-}*/
+}
 
 .form .btn {
     font-size: 0.8125rem;
