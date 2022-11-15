@@ -1,14 +1,13 @@
 {
   "name": "sass",
   "version": "2.0.0",
-  "default": "index.html",
+  "source": "index.html",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "start": "parcel",
+    "build": "parcel build"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
-    "parcel": "^2.6.0",
-    "parcel-bundler": "^1.12.5"
+    "parcel": "^2.6.0"
   }
 }
