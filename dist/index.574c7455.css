@@ -1033,14 +1033,14 @@ a {
 }
 
 .footer {
-  background-color: var(--color-light-gray);
+  background-color: #f7f7f7;
   box-shadow: 0 -5px 40px #00000029;
 }
 
 .footer-container {
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem 1.5rem;
   display: flex;
 }
 

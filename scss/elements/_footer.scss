@@ -1,12 +1,12 @@
 .footer {
-  background-color: var(--color-light-gray);
+  background-color: $color-light-gray;
   box-shadow: 0 -5px 40px #00000029;
 
   &-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0;
+    padding: 2rem 1.5rem;
   }
 
   &-header {
