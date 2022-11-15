@@ -15,6 +15,7 @@
     @include tablet {
       flex-direction: column;
       gap: 5.4rem;
+      padding: 0 1rem;
     }
   }
 
@@ -30,6 +31,8 @@
     @include tablet {
       flex-direction: row;
       padding: 0 1rem 0;
+      max-width: 37.2rem;
+      width: 100%;
     }
 
 
@@ -118,6 +121,11 @@
     width: 41rem;
     box-shadow: .5rem 1rem 2.7rem #07ACE629;
     margin: 0 4rem;
+
+    @include tablet {
+      max-width: 41rem;
+      width: 100%;
+    }
 
     .pricing-benefit {
       margin-bottom: 2.6rem;
