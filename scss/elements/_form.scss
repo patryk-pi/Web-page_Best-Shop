@@ -21,6 +21,7 @@
     }
   }
 
+
   &-checkbox {
     display: block;
     position: relative;
@@ -28,6 +29,14 @@
     margin-bottom: 2rem;
     cursor: pointer;
     font-size: 2.2rem;
+
+    .consent__text {
+      font-size: 1.2rem;
+      color: #707070;
+      transform: translateY(50%);
+    }
+
+
 
     input:checked ~ .checkbox {
       background-image: url(../assets/Checkmark.svg);
