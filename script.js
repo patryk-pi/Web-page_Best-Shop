@@ -119,6 +119,24 @@ class Calculator {
         });
 
         this.updateTotal();
+    }
+
+    updateTotal() {
+        const show = this.summary.list.querySelectorAll(".open").length > 0;
+
+        if (show) {
+            const productSum = this.form.products.value < 0 ? 0 : this.form.products.value * this.prices.products;
+            const ordersSum = this.form.orders.value < 0 ? 0 : this.form.orders.value * this.prices.orders;
+            const packagePrice = this.form.package.dataset.value.length === 0 ? 0 : this.prices.package[this.form.package.dataset.value];
+            const accounting = this.form.accounting.checked ? this.prices.accounting : 0;
+            const terminal = this.form.terminal.checked ? this.prices.terminal : 0;
+
+            this.summary.total.price.innerText = "$" + (productSum + ordersSum + packagePrice + accounting + terminal);
+
+            this.summary.total.container.classList.add("open");
+        } else {
+            this.summary.total.container.classList.remove("open");
+        }
     };
 
 }
