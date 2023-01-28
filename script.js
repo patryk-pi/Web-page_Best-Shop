@@ -1,5 +1,5 @@
 class Calculator {
-    constructor (form, summary) {
+    constructor(form, summary) {
         this.prices = {
             products: 2,
             orders: 1,
@@ -55,7 +55,7 @@ class Calculator {
         this.form.terminal.addEventListener("change", this.checkboxEvent.bind(this));
     }
 
-    updateSummary (id, calc, total, callback) {
+    updateSummary(id, calc, total, callback) {
         const summary = this.summary.list.querySelector("[data-id=" + id + "]");
         const summaryCalc = summary.querySelector(".item__calc");
         const summaryTotal = summary.querySelector(".item__price");
@@ -73,7 +73,7 @@ class Calculator {
         }
     }
 
-    inputEvent (e) {
+    inputEvent(e) {
         const id = e.currentTarget.id;
         const value = e.currentTarget.value;
         const singlePrice = this.prices[id];
@@ -93,8 +93,11 @@ class Calculator {
         this.updateTotal();
     }
 
-    selectEvent (e) {
+
+
+    selectEvent(e) {
         this.form.package.classList.toggle("open");
+
 
         const value = typeof e.target.dataset.value !== "undefined" ? e.target.dataset.value : "";
         const text = typeof e.target.dataset.value !== "undefined" ? e.target.innerText : "Choose package";
@@ -107,7 +110,25 @@ class Calculator {
             this.updateTotal();
         }
     }
-    checkboxEvent (e) {
+
+
+
+    moveToCalc(e) {
+
+        const value = typeof e.target.dataset.value !== "undefined" ? e.target.dataset.value : "";
+        const text = typeof e.target.dataset.value !== "undefined" ? e.target.dataset.value.charAt(0).toUpperCase() + e.target.dataset.value.slice(1) : "Choose package";
+
+        if (value.length > 0) {
+            this.form.package.dataset.value = value;
+            this.form.package.querySelector(".select__input").innerText = text
+
+            this.updateSummary("package", text, this.prices.package[value]);
+            this.updateTotal();
+        }
+
+    }
+
+    checkboxEvent(e) {
         const checkbox = e.currentTarget;
         const id = checkbox.id;
         const checked = e.currentTarget.checked;
@@ -144,6 +165,26 @@ class Calculator {
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector(".calc__form");
     const summary = document.querySelector(".calc__summary");
+    const calc = new Calculator(form, summary);
 
-    new Calculator(form, summary);
+    document.querySelectorAll('.btn-pricing').forEach(button => {
+        button.addEventListener('click', e => {
+            calc.moveToCalc(e)
+        })
+    });
 });
+
+const packageId = document.getElementById('package');
+
+document.addEventListener('click', e => {
+    if (e.target.closest('.select__input')) return;
+    packageId.classList.remove('open');
+});
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && (packageId.classList.contains('open'))) {
+        packageId.classList.remove('open');
+    }
+})
+
+
