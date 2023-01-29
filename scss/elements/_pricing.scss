@@ -50,6 +50,16 @@
       background-color: var(--line-color);
       position: relative;
       top: 2.5rem;
+      border: 1px solid transparent;
+
+      transition: all 0.3s ease-in-out;
+
+      &:hover,
+      &:active {
+        color: var(--line-color);
+        background-color: $color-white;
+        border-color: var(--line-color);
+      }
 
       @include tablet {
         position: absolute;

@@ -12,7 +12,17 @@
   &-primary {
     background-color: $color-primary;
     font-size: 1rem;
-    box-shadow: .3rem 1rem 1.4rem $color-primary-shadow
+    box-shadow: .3rem 1rem 1.4rem $color-primary-shadow;
+    border: 1px solid transparent;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+      background-color: $color-white;
+      border-color: $color-primary;
+    }
   }
 
   &-large {
