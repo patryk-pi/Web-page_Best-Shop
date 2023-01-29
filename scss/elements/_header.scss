@@ -71,12 +71,18 @@
   .nav {
     display: flex;
 
+
+
     &-element {
       padding: 0 2.6rem;
 
       &:last-child {
         padding-right: 0;
       }
+    }
+
+    &-link {
+      transition: all 0.3s ease-in-out;
     }
 
     &-link:link,
